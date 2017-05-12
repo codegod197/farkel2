@@ -1,0 +1,309 @@
+import java.util.*;
+
+
+
+public class Farkal {
+
+ private int a;
+private int c;
+private int b;
+private int d;
+private int e;
+private int f;
+
+
+public void roll(){
+  a = (int) (Math.random()*6+1);
+ b = (int) (Math.random()*6+1);
+ c = (int) (Math.random()*6+1);
+ d = (int) (Math.random()*6+1);
+ e = (int) (Math.random()*6+1);
+f = (int) (Math.random()*6+1);
+
+}
+
+
+
+
+
+    public static void main(String[] args) {
+
+    Scanner scan = new Scanner(System.in);
+    Random rand = new Random();
+	int neededPoints = 5000;
+	 int player1 =0;
+	 int player2=0;
+	int player3 =0;
+	int player4 =0;
+	int turn =1;
+	System.out.println("How many players");
+    int numOfPlayers = scan.nextInt();
+	while(turn ==1){
+
+	Farkal z = new Farkal();
+
+    z.roll();
+    System.out.println("Its Player 1's turn");
+    if (z.a ==1 || z.b == 1 || z.c ==1 ||  z.d ==1 ||  z.c ==1 ||  z.f ==1 ){
+    	player1 += 100;
+    	turn++;
+    		}
+
+
+
+   			else	if ((z.a ==1 && z.b == 1 && z.c ==1) ||
+    					(z.a ==1 && z.b == 1 && z.d ==1) ||
+    					(z.a ==1 && z.b == 1 && z.e ==1) ||
+						(z.a ==1 && z.b == 1 && z.f ==1) ||
+						(z.a ==1 && z.c == 1 && z.d ==1) ||
+						(z.a ==1 && z.c == 1 && z.e ==1) ||
+						(z.a ==1 && z.c == 1 && z.f ==1) ||
+						(z.a ==1 && z.d == 1 && z.e ==1) ||
+						(z.a ==1 && z.d == 1 && z.f ==1) ||
+						(z.a ==1 && z.e== 1 && z.f ==1) ||
+						(z.b ==1 && z.c== 1 && z.d ==1) ||
+						(z.b ==1 && z.c== 1 && z.e ==1) ||
+						(z.b ==1 && z.c== 1 && z.f ==1) ||
+						(z.b ==1 && z.d== 1 && z.e ==1) ||
+						(z.b ==1 && z.d== 1 && z.f ==1) ||
+						(z.c ==1 && z.d== 1 && z.e ==1) ||
+						(z.c ==1 && z.d== 1 && z.f ==1) ||
+						(z.c ==1 && z.e== 1 && z.f ==1))
+						{
+						player1 += 1000;
+						turn++;
+						}
+						if(z.a ==5 || z.b == 5 || z.c ==5 ||  z.d ==5 ||  z.c ==5 ||  z.f ==5 ){
+    					player1 += 50;
+    					turn++;
+						}
+					else if ((z.a ==5 && z.b == 5 && z.c ==5) ||
+    					(z.a ==5 && z.b == 5 && z.d ==5) ||
+    					(z.a ==5 && z.b == 5 && z.e ==5) ||
+						(z.a ==5 && z.b == 5 && z.f ==5) ||
+						(z.a ==5 && z.c == 5 && z.d ==5) ||
+						(z.a ==5 && z.c == 5 && z.e ==5) ||
+						(z.a ==5 && z.c == 5 && z.f ==5) ||
+						(z.a ==5 && z.d == 5 && z.e ==5) ||
+						(z.a ==5 && z.d == 5 && z.f ==5) ||
+						(z.a ==5 && z.e== 5 && z.f ==5) ||
+						(z.b ==5 && z.c== 5 && z.d ==5) ||
+						(z.b ==5 && z.c== 5 && z.e ==5) ||
+						(z.b ==5 && z.c== 5 && z.f ==5) ||
+						(z.b ==5 && z.d== 5 && z.e ==5) ||
+						(z.b ==5 && z.d== 5 && z.f ==5) ||
+						(z.c ==5 && z.d== 5 && z.e ==5) ||
+						(z.c ==5 && z.d== 5 && z.f ==5) ||
+						(z.c ==5 && z.e== 5 && z.f ==5))
+						{
+						player1 += 500;
+						turn ++;
+						}
+					else if ((z.a ==6 && z.b == 6 && z.c ==6) ||
+    					(z.a ==6 && z.b == 6 && z.d ==6) ||
+    					(z.a ==6 && z.b == 6 && z.e ==6) ||
+						(z.a ==6 && z.b == 6 && z.f ==6) ||
+						(z.a ==6 && z.c == 6 && z.d ==6) ||
+						(z.a ==6 && z.c == 6 && z.e ==6) ||
+						(z.a ==6 && z.c == 6 && z.f ==6) ||
+						(z.a ==6 && z.d == 6 && z.e ==6) ||
+						(z.a ==6 && z.d == 6 && z.f ==6) ||
+						(z.a ==6 && z.e== 6 && z.f ==6)||
+						(z.b ==6 && z.c== 6 && z.d ==6) ||
+						(z.b ==6 && z.c== 6 && z.e ==6) ||
+						(z.b ==6 && z.c== 6 && z.f ==6) ||
+						(z.b ==6 && z.d== 6 && z.e ==6) ||
+						(z.b ==6 && z.d== 6 && z.f ==6) ||
+						(z.c ==6 && z.d== 6 && z.e ==6) ||
+						(z.c ==6 && z.d== 6 && z.f ==6) ||
+						(z.c ==6 && z.e== 6 && z.f ==6))
+						{
+						player1 += 600;
+						turn ++;
+						}
+					else if ((z.a ==4 && z.b == 4 && z.c ==4) ||
+    					(z.a ==4 && z.b == 4 && z.d ==4) ||
+    					(z.a ==4 && z.b == 4 && z.e ==4) ||
+						(z.a ==4 && z.b == 4 && z.f ==4) ||
+						(z.a ==4 && z.c == 4 && z.d ==4) ||
+						(z.a ==4 && z.c == 4 && z.e ==4) ||
+						(z.a ==4 && z.c == 4 && z.f ==4) ||
+						(z.a ==4 && z.d == 4 && z.e ==4) ||
+						(z.a ==4 && z.d == 4 && z.f ==4) ||
+						(z.a ==4 && z.e== 4 && z.f ==4) ||
+						(z.b ==4 && z.c== 4 && z.d ==4) ||
+						(z.b ==4 && z.c== 4 && z.e ==4) ||
+						(z.b ==4 && z.c== 4 && z.f ==4) ||
+						(z.b ==4 && z.d== 4 && z.e ==4) ||
+						(z.b ==4 && z.d== 4 && z.f ==4) ||
+						(z.c ==4 && z.d == 4 && z.e ==4) ||
+						(z.c ==4 && z.d == 4 && z.f ==4) ||
+						(z.c ==4 && z.e == 4 && z.f ==4))
+						{
+						player1 += 600;
+						turn ++;
+						}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
